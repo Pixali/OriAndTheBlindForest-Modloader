@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>&#39;Ori and The Blind Forest&#39; Modloader by MaxTCC</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>&#39;Ori and The Blind Forest&#39; Modloader</h1>
+        <h2>Let&#39;s mod Nibel until it breaks.</h2>
+        <a href="https://github.com/MaxTCC/OriAndTheBlindForest-Modloader" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="disclaimer" class="anchor" href="#disclaimer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Disclaimer</h1>
+
+<p>First of all, I did not create this modloader!
+A friend of mine helped me build the base for this modloader, so some of the credit goes to him.
+For anyone interested, my friend's online name is TesseractCat.</p>
+
+<h1>
+<a id="summary" class="anchor" href="#summary" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Summary</h1>
+
+<p>This modloader allows users to program mods for Ori and The Blind Forest and load them into the game, hence the name.
+It includes a handful of in-game functions to help you with the development of your mods, such as:</p>
+
+<h3>
+<a id="the-console" class="anchor" href="#the-console" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Console</h3>
+
+<p>The console allows you to see the keybindings to toggle the other windows that are included in the modloader, and it also displays all the mods that have been loaded into your game.</p>
+
+<h3>
+<a id="the-debug-window" class="anchor" href="#the-debug-window" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Debug Window</h3>
+
+<p>The Debug Window displays all errors that the game logs, so it's most useful for mod developers, but who knows, you might manage to screw something up even without mods! ;)</p>
+
+<h3>
+<a id="the-object-browser" class="anchor" href="#the-object-browser" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Object Browser</h3>
+
+<p>The Object Browser allows you to see a very, very big list of every object currently in the game. All the object's names come up as buttons that delete the object when clicked on.</p>
+
+<h3>
+<a id="the-object-editor" class="anchor" href="#the-object-editor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Object Editor</h3>
+
+<p>The Object Editor allows you to select an object by hovering the cursor over it and pressing LeftShift+MouseLeftClick. You can then, using the window, edit the selected object's position, scale, see it's name, delete it and see a list of every component that is attached to it.</p>
+
+<h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h1>
+
+<h3>
+<a id="original-edition" class="anchor" href="#original-edition" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Original Edition</h3>
+
+<p>Be sure to backup your files first!!!
+Download the contents of the modloader.
+Go to your Steam installation folder, then steamapps\common\Ori\ori_data\Managed.
+Paste the contents from the respective folder into the 'Managed' folder.
+Accept if prompted to replace files.</p>
+
+<h3>
+<a id="definitive-edition" class="anchor" href="#definitive-edition" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Definitive Edition</h3>
+
+<p>Be sure to backup your files first!!!
+Download the contents of the modloader.
+Go to your Steam installation folder, then steamapps\common\Ori DE\oriDE_data\Managed.
+Paste the contents from the respective folder into the 'Managed' folder.
+Accept if prompted to replace files.</p>
+
+<h1>
+<a id="creating-mods" class="anchor" href="#creating-mods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating Mods</h1>
+
+<p>First of all, you need an IDE. <a href="https://www.visualstudio.com/">Download Visual Studio</a>.</p>
+
+<p>Then, open it, and in the left, click New Project. Get your bearings and find C#. From there, create a new Class Library. (Not the one that has Package!)
+On the bottom of that window, take note of the Location.</p>
+
+<p>Then, on the right, in the Solution Explorer, rightclick References-&gt;Add Reference, and click Browse. Go to the game's Managed folder again, and choose SeinModLoader.dll, Assembly-CSharp.dll and UnityEngine.dll</p>
+
+<p>Then add <a href="http://pastie.org/10721786">this code</a>. (It's the same contained in the .cs file from the sample code folder).
+Don't know where to add the code? On the right, click Class1.cs or whatever it is named.</p>
+
+<p>I could explain the basics of C# programming, but you should have at least some knowledge on it before you start modding, so go ahead and learn, then come back. ;)</p>
+
+<p>After you're done coding, press LeftControl+LeftShit+B. Give it a little bit, usually around a few seconds.
+Then navigate to the Location we covered above, and find a folder called "bin".
+Then open it -&gt; "Debug" and grab "YourModName.dll" and place that file in the Mods folder.</p>
+
+<h1>
+<a id="credits-and-copyright" class="anchor" href="#credits-and-copyright" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits and Copyright</h1>
+
+<p>Credits go to my friend Ivan 'TesseractCat' for creating the base of the modloader for another game, me for porting it to 'Ori and The Blind Forest', and Moon Studios for 'Assembly-CSharp.dll', that's entirely their work except for my 3 lines required to port, but without them, this wouldn't be possible because... well, there would be no game to mod. </p>
+
+<p>Moon Studios does have copyright on 'Assembly-CSharp.dll', as well as every other assembly of the game, but one of the devs said I could probably keep the modloader up if I wanted, and I probably wouldn't have any problems. She also talked to a couple other members of the development team and they didn't seem to oppose, so I'll just assume I have permission. :3</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/MaxTCC/OriAndTheBlindForest-Modloader/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/MaxTCC/OriAndTheBlindForest-Modloader/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/MaxTCC/OriAndTheBlindForest-Modloader"></a> is maintained by <a href="https://github.com/MaxTCC">MaxTCC</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
