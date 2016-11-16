@@ -1,3 +1,6 @@
+
+# For anyone lazy to read, I only contributed to this by adding the Object Editor. ;D
+
 # Looking for a download?
 Check out our fancy GitHub page!
 http://maxtcc.github.io/OriAndTheBlindForest-Modloader.
